@@ -765,9 +765,11 @@
       </geometry>
     </collision>
   </link>
+  <link name="left_hand_mount_link"/>
   <joint name="left_hand_palm_joint" type="fixed" dont_collapse="true">
     <origin xyz="0.0415 0.003 0" rpy="0 0 0"/>
     <parent link="left_wrist_yaw_link"/>
+    <child link="left_hand_mount_link"/>
   </joint>
 
   <link name="right_shoulder_pitch_link">
@@ -959,8 +961,10 @@
       </geometry>
     </collision>
   </link>
+  <link name = "right_hand_mount_link"/>
   <joint name="right_hand_palm_joint" type="fixed" dont_collapse="true">
     <origin xyz="0.0415 -0.003 0" rpy="0 0 0"/>
     <parent link="right_wrist_yaw_link"/>
+    <child link="right_hand_mount_link"/>
   </joint>
   </robot>
